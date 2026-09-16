@@ -1,0 +1,186 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.ibm-mono {
+  font-family: "IBM Plex Mono" !important;
+  font-optical-sizing: auto;
+  font-weight: large;
+  font-style: normal;
+  letter-spacing: 4px;
+}
+
+.ibm-mono-body{
+    letter-spacing: 2px;
+    font-family: "IBM Plex Mono";
+    font-size: small;
+    color: #009a22;
+}
+
+
+*{
+    margin: 0;
+    background-color: rgb(0, 10, 3);
+}
+
+.nav-bar{
+    width: 100vw;
+    height: 45px;
+}
+
+.logo{
+    color: #00ff2b;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    border-bottom: 5px solid #00ff2b;
+    padding-bottom: 5px;
+}
+
+
+.logo-cotainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.blinking{
+    animation-name: blink-animation;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+}
+
+.post-parent-container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 45%;
+    padding: 20px;
+    margin: auto;
+    gap: 20px;
+}
+
+.post-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post-input-border{
+    border: solid 1px #009a22;
+    margin-bottom: 10px;
+    border-style: dashed;
+    padding: 10px;
+ 
+}
+
+.user-input-container {
+    height: fit-content;
+    width: 100%;
+    border: 2.5px solid #009a22;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.post-textarea-content{
+    resize: none;
+    width: stretch;
+    height: 100px;
+    color: #00ff2b;
+    overflow-y: auto;
+    scrollbar-width: none;               
+    -ms-overflow-style: none;
+    font-family: "IBM Plex Mono";
+    letter-spacing: 4px;
+}
+
+.post-input-title{
+    width: 70%;
+    color: #00ff2b  !important;
+    font-family: "IBM Plex Mono";
+    letter-spacing: 4px;
+    
+}
+
+.title-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-input-title::placeholder {
+  color: #00ff2b;
+}
+
+.container-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-post{
+    border: solid 2.5px #009a22;
+    color: #00ff2b;
+    padding: 5px;
+    font-size: 12px;
+    font-family: "IBM Plex Mono";
+    letter-spacing: 2px;
+
+}
+
+.horizontal-list{
+    list-style: none;
+    font-weight: bold;
+}
+
+.existing-post{
+    height: fit-content;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 12px;
+    padding-top: 10px;
+    gap: 4px;
+}
+
+.existing-post-border {
+    border: 2.5px solid #009a22;
+    
+}
+
+
+
+.existing-post-content-border{
+    border: 1px solid #009a22;
+}
+
+.post-meta-data{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.post-meta-data li{
+    display: inline-block;
+    font-size: smaller;
+    list-style-type: disc;
+}
+
+.post-subject{
+    border-bottom: 1px solid #009a22;
+    border-bottom-style: dashed;
+    border-bottom-width: 70%;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.post-content p{
+    text-align: justify;
+}
+
+.light-footer{
+    font-weight: lighter;
+}
+
+@keyframes blink-animation {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}

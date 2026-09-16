@@ -1,0 +1,84 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="post-parent-container">
+        <div class="user-input-container">
+            <form action="/POST">
+                <div class="title-container">
+                    <input type="text" class="post-input-border post-input-title ibm-mono ibm-mono-body"
+                        name="post-title" id="input-post-title">
+                    <ul class="ibm-mono-body horizontal-list">
+                        <li>characters 300</li>
+                    </ul>
+                </div>
+                <div class="content-container">
+                    <textarea class="post-input-border post-textarea-content ibm-mono ibm-mono-body" name="post-content"
+                        id="textarea-post"></textarea>
+                </div>
+                <div class="container-btn">
+                    <button type="submit" class="btn-post">[enter] Post</button>
+                </div>
+            </form>
+        </div>
+        <div class="post-container">
+            <div class="existing-post-border existing-post">
+                <div class="existing-post-content-border existing-post ibm-mono-body">
+                    <div class="post-meta-data">
+                        <ul>
+                            <li>characters:100</li>
+                        </ul>
+                    </div>
+                    <div class="post-subject">
+                        <h2>Hello there</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>Ut ut quam vitae odio sodales consectetur. Donec lacinia lorem tortor, a molestie odio
+                            ultrices non. Phasellus facilisis felis ac ligula ultrices mattis. Cras dictum purus quis
+                            sodales dignissim. Integer non efficitur magna, vel pharetra est. In consectetur felis non
+                            volutpat finibus. Fusce venenatis ante justo, eget pulvinar quam aliquam quis.</p>
+                    </div>
+                    <div class="post-interactions">
+
+                    </div>
+                    <div class="post-meta-data light-footer">
+                        <ul>
+                            <li>dd/mm/aaa</li>
+                            <li>00:00am</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="existing-post-border existing-post">
+                <div class="existing-post-content-border existing-post ibm-mono-body">
+                    <div class="post-meta-data">
+                        <ul>
+
+                            <li>characters:100</li>
+                        </ul>
+                    </div>
+                    <div class="post-subject">
+                        <h2>Hello there</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>Ut ut quam vitae odio sodales consectetur. Donec lacinia lorem tortor, a molestie odio
+                            ultrices non. Phasellus facilisis felis ac ligula ultrices mattis. Cras dictum purus quis
+                            sodales dignissim. Integer non efficitur magna, vel pharetra est. In consectetur felis non
+                            volutpat finibus. Fusce venenatis ante justo, eget pulvinar quam aliquam quis.</p>
+                    </div>
+                    <div class="post-interactions">
+
+                    </div>
+                    <div class="post-meta-data light-footer">
+                        <ul>
+
+                            <li>dd/mm/aaa</li>
+                            <li>00:00am</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("partials/footer.ejs") %>
